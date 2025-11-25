@@ -1,51 +1,34 @@
-.banner {
-  padding: 4rem 7.5rem;
-  color: var(--creme);
-
+.selecionar-ingredientes {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  column-gap: 3.25rem;
 }
 
-.logo {
-  height: 4.5rem;
-  margin-bottom: 3rem;
+.titulo-ingredientes {
+  color: var(--verde-medio, #3D6D4A);
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
-.frase-cabecalho {
+.instrucoes {
   margin-bottom: 2rem;
 }
 
-.texto-verde {
-  color: var(--verde-medio, #3D6D4A);
+.categorias {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.foto-banner {
-  width: 35rem;
-}
-
-@media only screen and (max-width: 1300px) {
-  .banner {
-    padding: 4rem 3.75rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.dica {
+  align-self: flex-start;
+  margin-bottom: 3.5rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .banner {
-    padding: 4rem 1.5rem;
-  }
-
-  .foto-banner {
-    width: min(100%, 21.25rem);
+  .dica {
+    margin-bottom: 2.5rem;
   }
 }
