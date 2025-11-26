@@ -1,34 +1,37 @@
-.selecionar-ingredientes {
+.categoria {
+  width: 19.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--branco, #FFF);
+  box-shadow: 4px 4px 10px 0px rgba(68, 68, 68, 0.05);
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
-.titulo-ingredientes {
+.categoria__cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categoria__imagem {
+  width: 3.5rem;
+}
+
+.categoria__nome {
+  text-align: center;
   color: var(--verde-medio, #3D6D4A);
-  display: block;
-  margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
-.instrucoes {
-  margin-bottom: 2rem;
-}
-
-.categorias {
-  margin-bottom: 1rem;
+.categoria__ingredientes {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-}
-
-.dica {
-  align-self: flex-start;
-  margin-bottom: 3.5rem;
-}
-
-@media only screen and (max-width: 767px) {
-  .dica {
-    margin-bottom: 2.5rem;
-  }
 }
